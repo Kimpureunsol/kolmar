@@ -1,0 +1,230 @@
+.depth-area.on > .sub-depth {
+	height: 159px;
+}
+@media (max-width: 500px) {
+	.depth-area.on > .sub-depth {
+	    height: 142px;
+	}
+}
+
+.process-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.process-box > div {
+	width: 45%;
+}
+.kolmar > div,
+.consumer > div {
+	position: relative;
+	width: 100%;
+	height: 180px;
+	margin: 0 auto;
+	background-color: #3eb5e0;
+}
+.consumer > div {
+	background-color: #258adc;
+}
+.kolmar > div::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: -90px;
+	width: 0;
+	height: 0;
+	border-left: 90px solid #3eb5e0;
+	border-top: 90px solid transparent;
+	border-bottom: 90px solid transparent;
+}
+.consumer > div::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 90px solid #fff;
+	border-top: 90px solid transparent;
+	border-bottom: 90px solid transparent;	
+}
+.process-box span {
+	line-height: 180px;
+	color: #fff;
+	font-size: 3em;
+	font-weight: 500;
+}
+.process-des {
+	font-size: 2em;
+}
+.process-box p {
+	padding-top: 15px;
+}
+.disappear02 {
+	display: none;
+}
+
+@media (max-width: 1140px) {
+	.disappear {
+		display: none;
+	}
+	.disappear02 {
+		display: block;
+	}
+}
+@media (max-width: 1280px) {
+	.kolmar > div,
+	.consumer > div {
+		height: 140px;
+	}
+	.kolmar > div::after {
+		right: -70px;
+		border-left: 70px solid #3eb5e0;
+		border-top: 70px solid transparent;
+		border-bottom: 70px solid transparent;
+	}
+	.consumer > div::before {
+		border-left: 70px solid #fff;
+		border-top: 70px solid transparent;
+		border-bottom: 70px solid transparent;	
+	}
+	.process-box span {
+		line-height: 140px;
+	}
+}
+
+@media (max-width: 800px) {
+	.kolmar > div,
+	.consumer > div {
+		height: 100px;
+	}
+	.process-box > div {
+		width: 100%;
+	}
+	.kolmar > div::after,
+	.consumer > div::before {
+		display: none;
+	}
+	.process-box span {
+		line-height: 100px;
+	}
+	.process-box p {
+	    padding-top: 0px;
+	    padding-bottom: 15px;
+	}
+	.disappear02 {
+		display: none;
+	}
+}
+
+.principle-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.principle-box > div {
+	width: 31%;
+	padding: 4% 2%;
+	box-sizing: border-box;
+	box-shadow: 2px 1px 10px 1px rgb(0 0 0 / 10%);
+	background-color: #fff;
+}
+.principle-box img {
+	width: 50px;
+	height: 50px;
+}
+.principle-tit {
+	padding: 10px 0 30px;
+	font-size: 2.5em;
+	font-weight: 600;
+}
+.principle-tit-des {
+	font-size: 2em;
+}
+
+@media (max-width: 1280px) {
+	.principle-box img {
+		width: 40px;
+		height: 40px;
+	}
+	.principle-tit {
+	    padding: 10px 0 20px;
+	}
+}
+
+@media (max-width: 1020px) {
+	.principle-box > div {
+		width: 100%;
+	}
+	.principle-box > div:nth-child(2) {
+		margin: 30px 0;
+	}	
+}
+
+@media (max-width: 600px) {
+	.disappear03 {
+		display: none;
+	}
+}
+@media (max-width: 500px) {
+	.principle-box > div {
+		padding: 8% 5%;
+	}
+	.principle-box img {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+.system > .top-line {
+	padding-bottom: 0;
+}
+.system-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.step-box {
+	width: 15%;
+}
+.step-top, 
+.step-bot {
+	width: 100%;
+	border: 1px solid #363636;
+}
+.step-top {
+	margin-bottom: 20px;
+}
+.step-bot {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 10px;
+	height: 200px;
+	/*얘한테 inline-block주고, 자식인 span한테 vertical aling middle 줬는데
+	수직 정렬 안 돼서 플렉스 줌. 부모 자식 모두 인라인 요소인데 왜 안 되지?*/
+}
+.step-box span {
+	font-size: 2em;
+}
+
+@media (max-width: 1020px) {
+	.step-box {
+		width: 30%;
+	}
+	.step-box:nth-child(4),
+	.step-box:nth-child(5),
+	.step-box:nth-child(6) {
+		margin-top: 30px;
+	}
+	.step-bot {
+		height: 120px;
+	}
+}
+
+@media (max-width: 500px) {
+	.disappear04 {
+		display: none;
+	}
+}

@@ -1,0 +1,19 @@
+html, body, #wrap {
+	height: 100%;
+}
+#contents {
+	position: relative;
+	height: calc(100% - 165px);
+}
+.prepare {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-55%, -50%);
+}
+
+@media (max-width: 720px) {
+	#contents {
+		height: calc(100% - 245px);
+	}
+}

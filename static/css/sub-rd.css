@@ -1,0 +1,94 @@
+.depth-area.on > .sub-depth {
+	height: 71px;
+	letter-spacing: -0.1em;
+}
+@media (max-width: 500px) {
+	.depth-area.on > .sub-depth {
+		height: 64px;
+	}
+}
+
+.laboratory-box {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.laboratory-box > div {
+	width: 48%;
+	margin-bottom: 50px;
+	box-shadow: 2px 1px 10px 1px rgb(0 0 0 / 10%);
+}
+.laboratory-img {
+	width: 100%;
+	height: 410px;
+	background: url(../img/skincare.jpg) no-repeat center / cover;
+	font-size: 0;
+}
+.laboratory-box > div:nth-child(2) > .laboratory-img {
+	background-image: url(../img/makeup.jpg);
+}
+.laboratory-box > div:nth-child(3) > .laboratory-img {
+	background-image: url(../img/fusion.jpg);
+}
+.laboratory-box > div:nth-child(4) > .laboratory-img {
+	background-image: url(../img/natural.jpg);
+}
+.laboratory-box > div:nth-child(5) > .laboratory-img {
+	background-image: url(../img/bio.jpg);
+}
+.laboratory-box > div:nth-child(6) > .laboratory-img {
+	background-image: url(../img/food.jpg);
+}
+.laboratory-box > div:nth-child(7) > .laboratory-img {
+	background-image: url(../img/incense.jpg);
+}
+.laboratory-box > div:last-child > .laboratory-img {
+	background: url(../img/package.jpg) no-repeat 0 0 / cover;
+}
+.laboratory-img + div {
+	padding: 30px;
+	box-sizing: border-box;
+}
+.laboratory-name {
+	text-align: left;
+	font-size: 2.2em;
+	font-weight: 600;
+}
+.laboratory-des {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	text-align: left;
+	font-size: 2em;
+}
+
+@media (max-width: 1280px) {
+	.laboratory-img {
+		height: 310px;
+	}
+}
+
+@media (max-width: 800px) {
+	.laboratory-box > div {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.laboratory-img {
+		height: 250px;
+	}
+	.laboratory-img + div {
+		padding: 15px;
+	}
+	.laboratory-des {
+		-webkit-line-clamp: 2;
+	}
+}
+
+@media (max-width: 420px) {
+	.disappear {
+		display: none;
+	}
+}
+

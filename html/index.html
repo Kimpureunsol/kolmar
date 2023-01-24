@@ -434,19 +434,18 @@
                         slidesToShow: 1,
                         infinite: false,
                         dots: true,
-                        initialSlide : 1
+                        initialSlide: 1
                     };
 
-                    $(window).on("load resize", function() {        
+                    slider.not(".slick-initialized").slick(slickOption);
+
+                    $(window).on("load resize", function(){
                         let bw = $(window).width();
 
-                        if(bw > 1080) {
-                            console.log(bw)
+                        if(bw > 1080){
                             slider.slick("unslick");
-                        } else {
-                            slider.not(".slick-initialized").slick(slickOption);
                         }
-                    })
+                    });
                 </script>
             </section>
             <section class="busi blank">

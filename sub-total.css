@@ -1,0 +1,208 @@
+.subpage-main,
+.subpage-main button {
+	font-family: "Noto Sans Kr", sans-serif;
+	word-break: keep-all;
+	line-height: 1.8;
+	text-align: center;
+	color: #363636;
+	font-size: 10px;
+	font-weight: 400;
+}
+a {
+	display: inline-block;
+}
+img {
+	width: 100%;
+	height: 100%;
+}
+.inner {
+	position: relative;
+	width: 90%;
+	max-width: 1600px;
+	margin: 0 auto;
+}
+.sub-main {
+    position: relative;
+    width: 100%;
+    max-height: 755px;
+    overflow: hidden;
+}
+h2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 4.6em;
+	font-weight: 700;
+}
+.subpage-main h3 {
+	padding: 100px 0 50px;
+	text-align: center;
+	font-size: 3.3em;
+	font-weight: 600;
+	z-index: -1;
+}
+.subpage-main .krsize {
+	padding-bottom: 50px;
+	font-size: 2.6em;
+	font-weight: 600;
+	z-index: -1;
+}
+.subpage-main .ensize {
+	padding-bottom: 50px;
+	font-size: 3em;
+	font-weight: 600;
+	z-index: -1;
+}
+.subpage-main .tit-des {
+	font-size: 2.2em;
+}
+.menu-guide {
+	position: absolute;
+    top: 20px;
+    left: 0;
+}
+.menu-guide > .menu {
+	padding-right: 20px;
+	font-size: 16px;
+}
+.menu-guide img {
+	width: 18px;
+	height: 18px;
+	vertical-align: baseline;
+}
+.menu-guide > button {
+	position: relative;
+}
+.menu-guide > button::before,
+.menu-guide > button::after {
+	content: "·";
+	position: absolute;
+	left: -13px;
+	width: 3px;
+	height: 3px;
+}
+.menu-guide > button::after {
+	left: auto;
+	right: 8px;
+}
+.depth-area {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+.depth-area::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+    left: auto;
+    right: -4px;
+    transform: translateY(-50%);
+	width: 11px;
+	height: 7px;
+	background: url(../img/f_sel.png) no-repeat 0 0 / 100%;
+}
+.sub-depth {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 5px;
+	border: 1px solid transparent;
+	text-align: left;
+	background-color: #fff;
+	transition: height 0.5s;
+}
+.depth-area.on > .sub-depth {
+	height: 187px;
+	border-color: #363636;
+}
+.depth-area.on::after {
+	background-image: url(../img/f_sel_active.png)
+}
+.sub-blank {
+	margin-bottom: 200px;
+}
+.insub-blank {
+	padding-top: 100px;
+}
+.top-line {
+	padding-top: 100px;
+	font-size: 2.2em;
+	font-weight: 600;
+}
+.top-line > span {
+	position: relative;
+}
+.top-line > span::before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background-color: #363636;
+}
+
+@media (max-width: 1280px) {
+	.subpage-main,
+	.subpage-main button {
+		font-size: 9px;
+	}
+	.sub-blank {
+	    margin-bottom: 150px;
+	}
+	.insub-blank {
+		padding-top: 50px;
+	}
+	.top-line {
+		padding: 50px 0;
+	}
+}
+@media (max-width: 800px) {
+	.subpage-main,
+	.subpage-main button {
+		font-size: 7px;
+	}
+	.subpage-main h3 {
+		padding: 115px 0 30px;
+	}
+	.subpage-main .krsize,
+	.subpage-main .ensize {
+		padding-bottom: 30px;
+	}
+}
+@media (max-width: 500px) {
+	.subpage-main,
+	.subpage-main button {
+		font-size: 6.5px;
+	}
+	h2 {
+		font-size: 4em;
+	}
+	.subpage-main .krsize,
+	.subpage-main .ensize {
+		padding-bottom: 15px;
+	}
+	.menu-guide > .menu {
+		padding-right: 20px;
+		font-size: 14px;
+	}
+	.menu-guide img {
+		width: 14px;
+		height: 14px;
+	}
+	.sub-blank {
+	    margin-bottom: 70px;
+	}
+	.insub-blank {
+		padding-top: 40px;
+	}
+	.top-line {
+	    padding: 40px 0;
+	}
+}

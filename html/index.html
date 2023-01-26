@@ -439,7 +439,17 @@
 
                     slider.not(".slick-initialized").slick(slickOption);
 
-                    $(window).on("load resize", function(){
+                    $(window).on("resize", function(){
+                        let bw = $(window).width();
+
+                        if(bw > 1080){
+                            slider.slick("unslick");
+                        }else{
+                            slider.not(".slick-initialized").slick(slickOption);
+                        }
+                    });
+
+                    $(window).on("load", function(){
                         let bw = $(window).width();
 
                         if(bw > 1080){
